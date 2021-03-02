@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+
+}
+nav{
+    background:#0b97d8e3;
+    height: 80px;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    float: left;
+    padding: 0 100px;
+}
+.logo img{
+    height: 80px;
+    width: 65px;
+}
+.logo h1{
+    color: rgb(33, 33, 34);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'Pacifico';
+    font-weight: bolder;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+nav ul li a{
+    color: rgb(51, 50, 50);
+    border-radius: 10px;
+    background-color: #dcedf7;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 7px 13px;
+    border: 2px solid #64BEED;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: #62DF9B;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 25px;
+    color: #333;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.container{
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.search-box{
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+.search{
+    width: 100%;
+    border: 2px solid #22a1e6da;
+    border-right: none;
+    padding: 5px;
+    height: 40px;
+    outline: none;
+    background-color: #ebebebee;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.search:focus{
+    color: #000;
+    box-shadow: 0 0 5px #fc7474;
+}
+.search-btn{
+    width: 50px;
+    height: 40px;
+    border: 1px solid #22a1e6e5;
+    background: #22a1e6dc;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 20px;
+    align-items: center;
+}
+.hy{
+    color:rgba(7, 78, 158, 0.836);
+    font-weight: bold;
+    border: 2px solid #1d2a46c0;
+    border-radius: 10px;
+    background: #ebf5f0c7;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.py{
+    color: rgba(7, 65, 131, 0.836);
+    font-weight: bold;
+    border: 2px solid #1d2a46c0;
+    border-radius: 10px;
+    background: #ebf5f0c7;
+    position: absolute;
+    top: 52.08%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+.py2{
+    color: rgba(7, 65, 131, 0.836);
+    font-weight: bold;
+    border: 2px solid #1d2a46c0;
+    border-radius: 10px;
+    background: #ebf5f0c7;
+    position: absolute;
+    top: 56.9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width: 952px){
+    .logo{
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #161e27f5;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+    nav ul li a{
+        font-size: 17px;
+        border-radius: 0px;
+        background: none;
+        color: #64BEED;
+        border: 0;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #62DF9B;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .search{
+        font-size: 13px;
+    }
+    .hy{
+        width: 50%
+    }
+    .py{
+        width: 30%;
+        top: 54%;
+    }
+    .py2{
+        width: 30%;
+        top: 61.6%;
+    }
+}
+
+.image{
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: calc(100vh - 80px);
+}
+
+
