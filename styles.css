@@ -10,7 +10,7 @@ body{
 
 }
 nav{
-    background:#0b97d8e3;
+    background-image: linear-gradient(45deg,#0b97d8e3, #3652f0e3);
     height: 80px;
     width: 100%;
 }
@@ -24,12 +24,12 @@ nav{
     width: 65px;
 }
 .logo h1{
-    color: rgb(33, 33, 34);
+    color: whitesmoke;
     font-size: 20px;
     margin-top: 20px;
     margin-left: 10px;
     font-family: 'Pacifico';
-    font-weight: bolder;
+    font-weight: bold;
 }
 nav ul{
     float: right;
@@ -66,10 +66,10 @@ a.active, a:hover{
 #check{
     display: none;
 }
-.container{
+.con{
     width: 50%;
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -106,7 +106,7 @@ a.active, a:hover{
     font-size: 20px;
     align-items: center;
 }
-.hy{
+/* .hy{
     color:rgba(7, 78, 158, 0.836);
     font-weight: bold;
     border: 2px solid #1d2a46c0;
@@ -151,7 +151,8 @@ a.active, a:hover{
     width: 20%;
     padding: 10px;
     text-align: center;
-}
+} */
+
 @media (max-width: 952px){
     .logo{
         padding-left: 50px;
@@ -181,11 +182,14 @@ a.active, a:hover{
         line-height: 20px;
     }
     nav ul li a{
-        font-size: 17px;
-        border-radius: 0px;
-        background: none;
-        color: #64BEED;
-        border: 0;
+        color: rgb(51, 50, 50);
+        border-radius: 10px;
+        background-color: #dcedf7;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 7px 13px;
+        border: 2px solid #64BEED;
+        text-transform: uppercase;
     }
     a:hover, a.active{
         background: none;
@@ -197,7 +201,7 @@ a.active, a:hover{
     .search{
         font-size: 13px;
     }
-    .hy{
+    /* .hy{
         width: 50%
     }
     .py{
@@ -207,11 +211,11 @@ a.active, a:hover{
     .py2{
         width: 30%;
         top: 61.6%;
-    }
+    } */
 }
 
 .image{
-    background: url(images/background.jpg) no-repeat;
+    background-image: url('background.jpg') ;
     background-size: cover;
     filter: blur(3px);
     -webkit-filter: blur(3px);
