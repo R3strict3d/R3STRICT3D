@@ -4,7 +4,7 @@
     box-sizing:border-box;
   }
   body {
-    background: #fbf3ff;
+    background-color: #0854ace3;
   }
   nav{
     background-image: linear-gradient(45deg,#0b97d8e3, #3652f0e3);
@@ -185,6 +185,27 @@ a.active, a:hover{
   .butt_out:focus {
     outline: none;
   }
+  /* #myVideo{
+    position: fixed;
+    z-index: -1;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+@media(min-aspect-ratio: 16/9){
+    #myVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    #myVideo{
+        width: auto;
+        height: 100%;
+    }
+} */
 
   @media (max-width: 952px){
     .logo{
@@ -234,12 +255,26 @@ a.active, a:hover{
     .search{
         font-size: 13px;
     }
+    /* section{
+      background: url('frame.jpg') center center no-repeat;
+      background-size: cover;
+      height: calc(100vh - 80px);
+      background-attachment: fixed;
+      -webkit-filter: blur(2px);
+      -moz-filter: blur(2px);
+      -o-filter: blur(2px);
+      -ms-filter: blur(2px);
+      filter: blur(2px);
+  }
+    #myVideo{
+      display: none;
+    } */
 }
 .image{
     background-image: url('background.jpg') ;
     background-size: cover;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
     height: calc(100vh - 80px);
-}
+} 
   
