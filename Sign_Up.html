@@ -38,37 +38,38 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="myLeftCtn"> 
-                        <form class="myForm text-center">
-                            <header>Sign Up</header>
-                            <div class="form-group">
-                                <i class="fas fa-user"></i>
-                                <input class="myInput" type="text" placeholder="Username" id="username" required> 
-                            </div>
-
-                            <div class="form-group">
-                                <i class="fas fa-envelope"></i>
-                                <input class="myInput" placeholder="Email" type="text" id="email" required> 
-                            </div>
-
-                            <div class="form-group">
-                                <i class="fas fa-lock"></i>
-                                <input class="myInput" type="password" id="password" placeholder="Password" required> 
-                            </div>
-                            <div class="form-group">
-                                <i class="fas fa-lock"></i>
-                                <input class="myInput" type="password" id="password" placeholder="Confirm Password" required> 
-                            </div>
-
-                            <div class="form-group">
-                                <label>
-                                    <input id="check_1" name="check_1"  type="checkbox" required><small> I read and agree to Terms & Conditions</small></input> 
-                                    <div class="invalid-feedback">You must check the box.</div>
-                                </label>
-                            </div>
-
-                            <input type="submit" class="butt" value="CREATE ACCOUNT">
+                        <label for="show">
+                            <form class="myForm text-center">
+                                <header>Sign Up</header>
+                                <div class="form-group">
+                                    <i class="fas fa-user"></i>
+                                    <input class="myInput" type="text" placeholder="Username" id="username" required> 
+                                </div>
+    
+                                <div class="form-group">
+                                    <i class="fas fa-envelope"></i>
+                                    <input class="myInput" placeholder="Email" type="text" id="email" required> 
+                                </div>
+    
+                                <div class="form-group">
+                                    <i class="fas fa-lock"></i>
+                                    <input class="myInput" type="password" id="password" placeholder="Password" required> 
+                                </div>
+                                <div class="form-group">
+                                    <i class="fas fa-lock"></i>
+                                    <input class="myInput" type="password" id="password" placeholder="Confirm Password" required> 
+                                </div>
+    
+                                <div class="form-group">
+                                    <label>
+                                        <input id="check_1" name="check_1"  type="checkbox" required><small> I read and agree to Terms & Conditions</small></input> 
+                                        <div class="invalid-feedback">You must check the box.</div>
+                                    </label>
+                                </div>
                             
-                        </form>
+                                    <input type="submit" class="butt" value="CREATE ACCOUNT">
+                            </form>
+                        </label>
                     </div>
                 </div> 
                 <div class="col-md-6">
@@ -77,19 +78,74 @@
                             
                             <p>Already have an account?
                                 Sign in here.</p>
-                                <a href="Sign_In.html"><input type="button" class="butt_out" onclick="Sign_In.html" value="Sign In"/></a>
+                                <a href="Sign_In.html"><input type="button" class="butt_out" onclick="toggle()" value="Sign In"/></a>
                             </div>
                                
                     </div>
                 </div>
             </div>
         </div>
+        <div class="center">
+            <input type="checkbox" id="show">
+            <div class="contents">
+                <label for="" class="close-btnn fas fa-times"></label>
+                <div class="text">More information needed</div>
+                <form action="#">
+                    <div class="data">
+                        I am willing to: 
+                        <select class="classic" required>
+                            <option>Donate</option>
+                            <option>Sell</option>
+                        </select>
+                    </div>
+                    <div class="data">
+                        Parish: <select class="classic" required>
+                            <option>Kingston</option>
+                            <option>Saint Andrew</option>
+                            <option>Portland</option>
+                            <option>Saint Thomas</option>
+                            <option>Saint Catherine</option>
+                            <option>Saint Mary</option>
+                            <option>Saint Ann</option>
+                            <option>Manchester</option>
+                            <option>Clarendon</option>
+                            <option>Hanover</option>
+                            <option>Westmoreland</option>
+                            <option>Saint James</option>
+                            <option>Trelawny</option>
+                            <option>Saint Elizabeth</option>
+                          </select>
+                    </div>
+                    <div class="data">
+                        Secret Question: <select class="classic" required>
+                            <option>What is the name of your first pet?</option>
+                            <option>Where was your mother born?</option>
+                            <option>Where was your father born?</option>
+                            <option>What is the name of your best childhood friend?</option>
+                            <option>What is your favorite food?</option>
+                          </select>
+                    </div>
+                    <div class="data">
+                        <label>
+                            Answer to Secret Question: 
+                        </label>
+                        <input type="text" required>
+                    </div>
+                    <div class="bbtn">
+                        <div class="inner">
+                        </div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
 </div>
       
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- 
+
 </body>
 </html>
 

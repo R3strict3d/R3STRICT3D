@@ -38,19 +38,18 @@ nav ul li{
     margin: 0 15px;
 }
 nav ul li a{
-    color: rgb(51, 50, 50);
-    border-radius: 10px;
-    background-color: #dcedf7;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 7px 13px;
-    border: 2px solid #64BEED;
-    text-transform: uppercase;
+  color: rgb(51, 50, 50);
+  border-radius: 10px;
+  background-color: #dcedf7;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 7px 13px;
+  border: 2px solid #64BEED;
+  text-transform: uppercase;
 }
 a.active, a:hover{
     background: #62DF9B;
     transition: .5s;
-    text-decoration: none;
 }
 .checkbtn{
     font-size: 25px;
@@ -91,7 +90,7 @@ a.active, a:hover{
     border-radius: 25px;
     height: 100%;
     padding: 25px;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-left: 50px;
     padding-right: 50px;
     justify-content: center;
@@ -101,7 +100,7 @@ a.active, a:hover{
     color: #3652f0e3;
     font-size: 35px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .row{
   height: 100%;
@@ -151,7 +150,6 @@ a.active, a:hover{
     width: 230px;
     border: none;
     border-radius: 25px;
-    margin-left: 20px;
     padding: 10px;
     -webkit-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
@@ -187,18 +185,17 @@ a.active, a:hover{
   .butt_out:focus {
     outline: none;
   }
-  .for{
-    padding-bottom: 10px;
-    padding-right: 80px;
-  }
   .forgot{
     font-size: 13px;
     color: rgb(133, 132, 132);
+    padding-bottom: 10px;
+    margin-left: 10px;
+    /* border-bottom-width: 2px; */
   }
-.forgot:hover{
-  border: none;
-  background-color: transparent;
-}
+  /* .forgot a:hover{
+    text-decoration: underline;
+  } */
+
   @media (max-width: 952px){
     .logo{
         padding-left: 50px;
@@ -248,7 +245,7 @@ a.active, a:hover{
         font-size: 13px;
     }
 }
-.image{
+/* .image{
     position: relative;
     background: url('background.jpg') top right no-repeat;
     background-attachment: fixed;
@@ -256,6 +253,6 @@ a.active, a:hover{
     filter: blur(10px);
     -webkit-filter: blur(10px);
     height: calc(100vh - 80px);
-}
+} */
 
   
