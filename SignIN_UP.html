@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles2.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/cc2994c6f2.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <title>Sign In $ Sign Up Form</title>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="logo">
+                <img src="images/logo1.png" alt="ERMS">
+                <h1>Educational Resource<br>Management System</h1>   
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a class="active" href="SignIN_UP.html">Sign In</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="cont">
+                <div class="form">
+                    <h2>Sign In</h2>
+                    <form class="float_form" style="padding-left: 40px" action="login_handler.php" method="POST">
+                    <label>
+                        <span>Username</span>
+                        <input type="text" name="username">
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input type="password" name="password">
+                    </label>
+                    <button class="submit" type="button">Sign In</button>
+                    <p class="forgot-pass">Forgot Password ?</p>
+                    </form>
+                    <div class="social-media">
+                        <ul>
+                            <li><img src="images/facebook.png"></li>
+                            <li><img src="images/google.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-cont">
+                    <div class="img">
+                        <div class="img-text">
+                            <h2>Hello, Friend!</h2>
+                            <p>Enter your details to start a journey with us.</p>
+                        </div>
+                        <div class="img-text">
+                            <h2>Welcome Back!</h2>
+                            <p>Login to continue your journey with us. We missed you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
