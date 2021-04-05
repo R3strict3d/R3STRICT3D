@@ -12,18 +12,18 @@
         <script src="https://kit.fontawesome.com/cc2994c6f2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-      <?php session_start();
- if (isset($_SESSION['user'])) {
-    header("Location: http://localhost/Erms/login.php",true);
-};
-?>
+        <?php session_start();
+            if (isset($_SESSION['user'])) {
+                header("Location: http://localhost/Erms/login.php",true);
+            };
+        ?>
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
             <div class="logo">
-                <img src="images/logo1.png" alt="ERMS">
+                <img src="logo1.png" alt="ERMS">
                 <h1>Educational Resource<br>Management System</h1>
             </div>
             <ul>
@@ -37,21 +37,21 @@
             </ul>
         </nav>
         <section>
-            <div class="image">
-            </div>
-            <div>
-                <h1 style="font-size: 2.5vmin;" class="hy">
-                     Donating and selling books have never been easier!
-                <h1>
-                <p style="font-size: 2vmin;" class="py">
-                    You can donate or sell textbooks.
-                </p>
-                <p style="font-size: 2vmin;" class="py2">
-                    Search for the books you need.
-                </p>
-            </div>
+            <video id="myVideo"loop autoplay muted poster="frame1.jpg">
+                <source src="back1.mp4" type="video/mp4">
+            </video>
+        
         </section>
-        <div class="container">
+        <!-- <div class="con">
+            <div class="search-box">
+                <input type="text" class="search" 
+                placeholder="Search for book..."/>
+                <button type="submit" class="search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div> -->
+        <div class="con">
             <form name="browse" id="browse" novalidate="">
                 <div class="search-box">
                     <input type="text" class="search"

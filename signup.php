@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <title>Login Form Design</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles2.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato"
-        rel="stylesheet">
-        <script src="https://kit.fontawesome.com/cc2994c6f2.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-        <title>Sign Up</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body> 
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
             <div class="logo">
-                <img src="images/logo1.png" alt="ERMS">
-                <h1>Educational Resource<br>Management System</h1>
+                <img src="logo1.png" alt="ERMS">
+                <h1>Educational Resource<br>Management System</h1>   
             </div>
             <ul>
-                <li><a href="home.php">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.php">About</a></li>
+                <!-- <li><a href="browse.php">Browse</a></li> -->
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="faq.php">FAQ</a></li>
                 <li><a href="login.php">Sign In</a></li>
                 <li><a class="active" href="signup.php">Sign Up</a></li>
             </ul>
         </nav>
-        <section>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="cont">
-                        <div class="form">
-                            <h2>Sign Up</h2>
-                            <form class="float_form" id="signup_form" style="padding-left: 40px">
-                            <label>
-                                <span>Username</span>
-                                <input type="text" name="username" required="">
-                            </label>
-                            <label>
-                                <span>E-mail Id</span>
-                                <input type="email" name="email" required="">
-                            </label>
-                            <label>Phone Number
-                                <input type="text" data-inputmask='"mask": "(999) 999-9999"' data-mask id="phone" name="phone" required="">
-                            </label>
-                            <label>
-                                <span>Password</span>
-                                <input type="password" id="password" name="password" required="">
-                            </label>
-                            <label>
-                                <span>Confirm Password</span>
-                                <input type="password" id="cpassword" name="cpassword" required="">
-                            </label>
-                              <?php
+        <div class="image" onclick="closeForm(); return false;">
+        </div>
+        <!-- <section>
+            <video id="myVideo"loop autoplay muted poster="frame1.jpg">
+                <source src="bk.mp4" type="video/mp4">
+            </video>
+        </section> -->
+        <div class="container">
+            <div class="myCard">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="myLeftCtn"> 
+                            <form name="form" class="myForm text-center" action="javascript:void(0);" method="POST">
+                                <header>Sign Up</header>
+                                <div class="form-group">
+                                    <i class="fas fa-user"></i>
+                                    <input name="Username" class="myInput" type="text" placeholder="Username" id="username" required> 
+                                </div>
+
+                                <div class="form-group">
+                                    <i class="fas fa-envelope"></i>
+                                    <input name="Email" class="myInput" placeholder="Email" type="text" id="email" required> 
+                                </div>
+
+                                <div class="form-group">
+                                    <i class="fas fa-lock"></i>
+                                    <input name="Password" class="myInput" type="password" id="password" placeholder="Password" required> 
+                                </div>
+                                <div class="form-group">
+                                    <i class="fas fa-lock"></i>
+                                    <input name="Confirm" class="myInput" type="password" id="password" placeholder="Confirm Password" required> 
+                                </div>
+
+                                <div class="form-group">
+                                    <label>
+                                        <input id="check_1" name="check_1"  type="checkbox" required ><small> I read and agree to Terms & Conditions</small></input> 
+                                        <div class="invalid-feedback">You must check the box.</div>
+                                    </label>
+                                </div>
+
+                                <?php
                                 if(isset($_GET['msg']) && $_GET['msg']=='failed')
                                 {
                                     echo "<label><strong style='color:red'>Invalid Username/Password</strong></label>";
@@ -68,72 +77,66 @@
                                 }
                             ?>
                             <label style="display: none;color:red;" id="pass_err">Passwords does not match</label>
-                            <input type="submit" name="Login" value="Sign Up">
-                            <p class="forgot-pass"><a href="login.php">Login</a></p>
-                            <!-- <button class="submit" type="button">Sign In</button> -->
-                            <p class="forgot-pass">Forgot Password ?</p>
+                                <input type="submit" class="butt" value="Sign Up" id="popupLink">
                             </form>
-                            <div class="social-media">
-                                <ul>
-                                    <li><img src="images/facebook.png"></li>
-                                    <li><img src="images/google.png"></li>
-                                </ul>
-                            </div>
                         </div>
-                        <div class="sub-cont">
-                            <div class="img">
-                                <div class="img-text">
-                                    <h2>Hello, Friend!</h2>
-                                    <p>Enter your details to start a journey with us.</p>
+                    </div> 
+                    <div class="col-md-6">
+                        <div class="myRightCtn">
+                                <div class="box"><header>Welcome Back!</header>
+                                
+                                <p>Already have an account?
+                                    Sign in here.</p>
+                                    <a href="Sign_In.html"><input type="button" class="butt_out" value="Sign In"/></a>
                                 </div>
-                                <div class="img-text">
-                                    <h2>Welcome Back!</h2>
-                                    <p>Login to continue your journey with us. We missed you.</p>
-                                </div>
-                            </div>
+                                
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="admin/plugins/inputmask/jquery.inputmask.min.js"></script>
-    <script type="text/javascript">
-        $('[data-mask]').inputmask()
-      $(document).ready(function (e) {
-      $("#signup_form").submit(function (e) {
-        var pass = $('#password').val();
-        var cpass = $('#cpassword').val();
-        if (pass!=cpass) {
-            $('#pass_err').css({"display":"block"});
-            return false;
-        }else{
-            $('#pass_err').css({"display":"none"});
-        }
-        // alert()
-          e.preventDefault();
-          // window.scrollTo(0, 0);
-          // alert();
-          // $('#userloginwait_msg').slideDown(1000);
-          var data = $("#signup_form").serialize();
-          // console.log(data);
-          $.ajax({
-              url: "signup_ctrl.php",
-              type: "POST",
-              // dataType: "json",
-              data: data,
-              success: function (result)
-              {
-                console.log(result);
-                if (result==1) {
-                  window.location = "http://localhost/Erms/login.php";
-                }else{
-                    window.location = result;
-                }
-              },
-          });
-      })
-    });
-    </script>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+         
+        <script type="text/javascript">
+                $('[data-mask]').inputmask()
+            $(document).ready(function (e) {
+                $("#signup_form").submit(function (e) {
+                    var pass = $('#password').val();
+                    var cpass = $('#cpassword').val();
+                    if (pass!=cpass) {
+                        $('#pass_err').css({"display":"block"});
+                        return false;
+                    }else{
+                        $('#pass_err').css({"display":"none"});
+                    }
+                    // alert()
+                    e.preventDefault();
+                    // window.scrollTo(0, 0);
+                    // alert();
+                    // $('#userloginwait_msg').slideDown(1000);
+                    var data = $("#signup_form").serialize();
+                    // console.log(data);
+                    $.ajax({
+                        url: "signup_ctrl.php",
+                        type: "POST",
+                        // dataType: "json",
+                        data: data,
+                        success: function (result)
+                        {
+                            console.log(result);
+                            if (result==1) {
+                            window.location = "http://localhost/Erms/login.php";
+                            }else{
+                                window.location = result;
+                            }
+                        },
+                    });
+                })
+            });
+        </script>
     </body>
 </html>
+
